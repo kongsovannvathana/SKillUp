@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <>
-      <div className="w-full min-h-screen pt-16 md:h-[calc(100vh-80px)] flex items-center bg-gradient-to-br from-blue-100 to-sky-200">
+      <div className="w-full min-h-screen  pb-[150px] md:h-[calc(100vh-80px)] flex items-center bg-gradient-to-br from-blue-100 to-sky-200">
         <div className="w-full h-auto text-center space-y-4 p-5">
           <h1 className="md:text-4xl text-3xl">About Us</h1>
           <p className="md:text-xl text-lg font-semibold">
@@ -24,9 +24,6 @@ export default function About() {
             knowledge, improve their careers, and build a future full of
             opportunities.
           </p>
-          <button className="px-2 py-3 border border-black rounded-md bg-yellow-400 hover:bg-yellow-500">
-            <Link to="/course">View Courses</Link>
-          </button>
         </div>
       </div>
     </>

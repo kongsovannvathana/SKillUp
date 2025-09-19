@@ -13,8 +13,10 @@ export default function Coursecard({ title, description, image }) {
             <p className="">{description}</p>
           </div>
           <button
-            className={`w-24 py-2 mt-2 rounded border border-black ${
-              enroll ? "bg-gray-400 cursor-not-allowed" : "hover:bg-yellow-400"
+            className={`w-24 py-2 mt-2 rounded border border-black text-sky-600 ${
+              enroll
+                ? "bg-yellow-500 cursor-not-allowed"
+                : "hover:bg-yellow-400"
             }`}
             onClick={() => setEnroll(!enroll)}
             disabled={enroll}

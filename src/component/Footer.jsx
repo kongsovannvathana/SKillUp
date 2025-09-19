@@ -7,7 +7,7 @@ import { AiFillTikTok } from "react-icons/ai";
 export default function Footer() {
   return (
     <>
-      <footer>
+      <footer className="fixed bottom-0 w-full">
         <div className="sm:hidden w-full h-[150px] bg-sky-600 flex">
           <div className="w-full h-full py-4 px-3">
             <p className="font-bold">Email: skillup@gmail.com</p>

@@ -45,7 +45,7 @@ export default function Course() {
   ];
   return (
     <>
-      <div className="grid grid-cols-1 pb-[50px] pt-[100px] ml-3 mr-3 sm:grid-cols-3 lg:grid-cols-4 lg:pb-[50px] z-0 lg:pt-[100px] gap-5">
+      <div className="grid grid-cols-1 pb-[150px] pt-[100px] ml-3 mr-3 sm:grid-cols-3 lg:grid-cols-4 lg:pb-[150px] z-0 lg:pt-[100px] gap-5">
         {courseList.map((course, index) => (
           <Coursecard
             key={index}

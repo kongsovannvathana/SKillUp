@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
-      <div className="w-full h-[calc(100vh-80px)] relative flex mt-[70px]">
+      <div className="w-full h-[calc(100vh-80px)] relative flex mt-[30px]">
         <img
           src="bg.png"
           alt=""

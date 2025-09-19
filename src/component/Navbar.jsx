@@ -41,26 +41,32 @@ export default function Navbar() {
         </div>
         {/* --------------slide left------- */}
         <div
-          className={`sm:hidden bg-sky-600 shadow-lg h-full w-[195px] fixed top-[70px] left-0 duration-300 z-40 ${
+          className={`sm:hidden bg-sky-600 shadow-lg h-full w-2/4 fixed top-[70px] left-0 duration-300 z-40 ${
             menu ? `-translate-x-0` : `-translate-x-full`
           }`}
         >
           <ul className="w-full h-full p-7 space-y-4">
             <li className="font-bold hover:underline decoration-2 cursor-pointer">
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={() => setMenu(!menu)}>
+                Home
+              </Link>
             </li>
             <li className="font-bold hover:underline decoration-2 cursor-pointer">
-              <Link to="/course">Course</Link>
+              <Link to="/course" onClick={() => setMenu(!menu)}>
+                Course
+              </Link>
             </li>
             <li className="font-bold hover:underline decoration-2 cursor-pointer">
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={() => setMenu(!menu)}>
+                About
+              </Link>
             </li>
           </ul>
         </div>
 
         {/* ------------right slide------------- */}
         <div
-          className={`sm:hidden w-[195px] h-full bg-black/50 fixed top-[70px] right-0 duration-300 z-40 ${
+          className={`sm:hidden w-2/4 h-full bg-black/50 fixed top-[70px] right-0 duration-300 z-40 ${
             menu ? `translate-x-0` : `translate-x-full`
           }`}
           onClick={() => setMenu(!menu)}
